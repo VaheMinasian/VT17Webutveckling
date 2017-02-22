@@ -1,6 +1,8 @@
+body{
+    overflow-y: hidden;
+}
 @-webkit-keyframes bounce {
     0% {
-
         width: 100px;
         height: 100px;
         border-radius: 100%;
@@ -13,7 +15,7 @@
         width: 100px;
         height: 100px;
         border-radius: 100%;
-        bottom: 3px;
+        bottom: .1%;
         left: 1%;
         border-color: #F86D26;
         background: #F86D26;
@@ -22,7 +24,7 @@
         width: 112px;
         height: 88px;
         border-radius: 100%;
-        bottom: 1px;
+        bottom: .1%%;
         left: 1%;
         border-color: #F86D26;
         background: #F86D26;
@@ -31,7 +33,7 @@
         width: 117px;
         height: 83px;
         border-radius: 100%;
-        bottom: 1px;
+        bottom: .1%;
         left: 1%;
         border-color: #F86D26;
         background: #F86D26;
@@ -40,7 +42,7 @@
         width: 120px;
         height: 80px;
         border-radius: 100%;
-        bottom: 0px;
+        bottom: 0%;
         left: 1%;
         border-color: #F86D26;
         background: #F86D26;
@@ -71,7 +73,7 @@
         height: 40px;
         border-color: #0000ff;
         border-radius: 100%;
-        bottom: 38px;
+        bottom: 5.2%;
         left: 10%;
         background: #0000ff;
     }
@@ -80,7 +82,7 @@
         height: 37px;
         border-color: #0000ff;
         border-radius: 100%;
-        bottom: 38px;
+        bottom: 5.2%;
         left: 10%;
         background: #0000ff;
     }
@@ -89,7 +91,7 @@
         height: 35px;
         border-color: #0000ff;
         border-radius: 100%;
-        bottom: 38px;
+        bottom: 5.2%;
         left: 10%;
         background: #0000ff;
     }
@@ -98,7 +100,7 @@
         height: 34px;
         border-color: #0000ff;
         border-radius: 100%;
-        bottom: 38px;
+        bottom: 5.2%;
         left: 10%;
         background: #0000ff;
     }
@@ -128,7 +130,7 @@
         height: 40px;
         border-color: #ff0000;
         border-radius: 100%;
-        bottom: 38px;
+        bottom: 5.2%;
         left: 16.5%;
         background: #ff0000;
     }
@@ -137,7 +139,7 @@
         height: 37px;
         border-color: #ff0000;
         border-radius: 100%;
-        bottom: 38px;
+        bottom: 5.2%;
         left: 16.5%;
         background: #ff0000;
     }
@@ -146,7 +148,7 @@
         height: 35px;
         border-color: #ff0000;
         border-radius: 100%;
-        bottom: 38px;
+        bottom: 5.2%;
         left: 16.5%;
         background: #ff0000;
     }
@@ -155,7 +157,7 @@
         height: 34px;
         border-color: #ff0000;
         border-radius: 100%;
-        bottom: 36px;
+        bottom: 5.2%;
         left: 16.5%;
         background: #ff0000;
     }
@@ -174,42 +176,42 @@
 @-webkit-keyframes arm {
     0% {
         left:  11%;
-        bottom: 20px;
+        bottom: 2.8%;
         height: 4px;
         width: 110px;
     }
     09% {
         -webkit-transform: rotate(-16deg);
         left:  11%;
-        bottom: 20px;
+        bottom: 2.8%;
         height: 4px;
         width: 110px;
     }
     50% {
         left:  11%;
-        bottom: 20px;
+        bottom:2.8%;
         height: 4px;
         width: 110px;
     }
     91% {
         -webkit-transform: rotate(16deg);
         left:  11%;
-        bottom: 20px;
+        bottom: 2.8%;
         height: 4px;
         width: 110px;
     }
     100% {
         -webkit-transform: rotate(-16deg);
         left:  11%;
-        bottom: 20px;
+        bottom: 2.8%;
         height: 4px;
         width: 110px;
     }
 }
 .scalebase{
-    position: fixed;
+    position: absolute;
     left:  14%;
-    bottom: 10px;
+    bottom: 1.4%;
     background-color: black;
     height: 10px;
     width: 14px;
@@ -220,7 +222,7 @@
 .scalearm{
     -webkit-animation-name: arm; 
     left:  11%;
-    bottom: 20px;
+    bottom: 2.8%;
     background-color: black;
     height: 4px;
     width: 110px;
@@ -241,7 +243,7 @@
         border-width: 2px;
         border-color: #ffffff;
         border-radius: 0%;
-        bottom: 0px;
+        bottom: 0%;
         left: 45%;
         background: #ffffff;
         opacity: 0.5;
@@ -331,71 +333,217 @@
         border-width: 2px;
         border-color: #4F4E4E;
         border-radius: 0%;
-        bottom: 0px;
+        bottom: 0%;
         left: 45%;
         background: #050505;
         opacity: 0.4;
     }
 }
-
 .square1 {
     -webkit-animation-name: move;
     position: absolute;
     border-style: solid;
-    -webkit-animation-delay: forwards;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 8s;
     -webkit-animation-direction: alternate;
     -webkit-animation-fill-mode: forwards;
 }
-
-@-webkit-keyframes div_1 {
-	0% {
-       height: 50px;
-       width: 50px;
-       border-color: #1670F8;
-       background-color: #EEF609;
-       border-style: dashed;
-       margin-right: 5px;
-       margin-top: 50px;
+.HTML5{
+    -webkit-animation-name: html;
+    position: absolute;
+    border-style: dashed;
+    border-width: 5px;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes html {
+    0% {
+        -webkit-transform: rotate(5deg);
+        width: 85px;
+        height: 100px;
+        right: 26%;
+        top: -10%;
+        border-color: #E1F725;
+        border-radius: 5%;
+        background: #0090FF;
+    }
+    35% {
+        -webkit-transform: rotate(100deg);
+        width: 65px;
+        height: 105px;
+        right: 18%;
+        top: 30%;
+        border-color: #594437;
+        border-radius: 10%;
+        background: #138D44;
+    }
+    65% {
+        -webkit-transform: rotate(-230deg);
+        width: 85px;
+        height: 75px;
+        right: 20%;
+        top: 60%;
+        border-color: #1D2CF0;
+        border-radius: 20%;
+        background: #FFA200;
+    }
+    100% {
+       -webkit-transform: rotate(50deg);
+       width: 115px;
+       height: 65px;
+       right: 14%;
+       top: 105%;
+       border-color: #C9FB02;
+       border-radius: 15%;
+       background: #F30C0C;
    }
 }
-.div1{
-    -webkit-animation-name: div_1; 
-    -webkit-animation-timing-function:font-stretch: ease-in-out;
+.html_text{
+    -webkit-animation-name: html_t;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: reverse-alternate;
-    -webkit-animation-delay: 1s;
+    font-weight: bold;
+    -webkit-animation-duration: 3s;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+@-webkit-keyframes html_t {
+    0% {
+        -webkit-transform: rotate(810deg);
+        font-size: 18px;
+    }
+    100% {
+        font-size: 30px;
+    }
+}
+@-webkit-keyframes CSS {
+    0% {
+        visibility: visible;
+        -webkit-transform: rotate(-360deg);
+        width: 80px;
+        height: 80px;
+        right: 4%;
+        top: -5%;
+        border-color: #1D2CF0;
+        border-radius: 20%;
+        background: #FFA200;
+        opacity: 0;
+    }
+    20% {
+       width: 120px;
+       height: 120px;
+       top: 25%;
+       right: 4%;
+       border-color: #C9FB02;
+       border-radius: 15%;
+       background: #F30C0C;
+       opacity: 1;
+   }
+   35% {
+       width: 160px;
+       height: 160px;
+       top: 37%;
+       right: 4%;
+       border-color: #C9FB02;
+       border-radius: 15%;
+       background: #F30C0C;
+       opacity: 1;
+   }
+   65% {
+       width: 160px;
+       height: 160px;
+       top: 37%;
+       right: 4%;
+       border-color: #C9FB02;
+       border-radius: 15%;
+       background: #F30C0C;
+       opacity: 1;
+   }
+   80% {
+       width: 110px;
+       height: 110px;
+       top: 70%;
+       right: 4%;
+       border-color: #C9FB02;
+       border-radius: 15%;
+       background: #F30C0C;
+       opacity: .8;
+   }
+   100% {
+       width: 60px;
+       height: 60px;
+       top: 105%;
+       right: 4%;
+       border-color: #1D2CF0;
+        border-radius: 10%;
+        background: #FFA200;
+       opacity: .3;
+   }
+}
+.CSS{
+
+    -webkit-animation-name: CSS;
+    visibility: hidden;
+    border-width: 8px;
+    position: absolute;
+    border-style: solid;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: normal;
 }
 
-.div2{
+.CSS_text{
+    -webkit-animation-name: CSS_t;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: -50px;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    font-weight: bold;
+    -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes CSS_t {
+    0% {
+        padding-top: -50px;
+        font-size: 10px;
+        -webkit-transform: rotate(360deg);
+        }
+    25% {
+        padding-top: -50px;
+        font-size: 20px;
+    }
+    35% {
+        padding-top: -50px;
+        font-size: 25px;
+    }
+    65% {
+        font-size: 25px;
+    }
+    80% {
+        font-size: 20px;
+    }
+    100% {
+        padding-top: -100px;
+        font-size: 6px;
+    }
+}
+
+.HTML5{
     height: 50px;
     width: 50px;
     border-style: dashed;
     border-color: #02E0E1;
     background-color: #365481;
-    margin-right: 35px;
-    margin-top: 50px;
-    float: right;
-}
-.div3{
-    height: 50px;
-    width: 50px;
-    border-style: dashed;
-    border-color: #F90808;
-    background-color: #EB8207;
-    margin-right: 65px;
-    margin-top: 100px;
-    float: right;
-}
-.div4{
-    height: 50px;
-    width: 50px;
-    border-style: dashed;
-    border-color: #020202;
-    background-color: #01BC43;
-    margin-right: 85px;
-    margin-top: 150px;
+    margin-right: 20px;
+    margin-top: 10px;
     float: right;
 }
