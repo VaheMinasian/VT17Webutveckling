@@ -54,7 +54,7 @@ function validate_number() {
 function validate_Leap_Year(){
 	document.getElementById("leapYearResult").innerHTML = "";
 	var leap = "skottår"; 	leap = leap.fontcolor("green");
-	var notLeap = "vanlig år"; notLeap = notLeap.fontcolor("red");
+	var notLeap = "vanligt år"; notLeap = notLeap.fontcolor("red");
 	var year = document.getElementById('leapYear').value;
 	if(year!=0){
 	var result = (((year%100==0)&&(year%400!=0))||(year%4!=0)) ? notLeap : leap;
