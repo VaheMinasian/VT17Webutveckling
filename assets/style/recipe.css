@@ -1,0 +1,278 @@
+body {
+    /*border-style: solid;
+    border-color: red;*/
+    margin: 2px;
+    padding: 2px;
+    background-image: url("../resource/sayagata.png");
+}
+
+header{
+    position: relative;
+    background-image: url("../resource/pieheader.jpg");
+    border-style: outset;
+    border-color: #C1AF8C;
+    border-width: 3px;
+    border-radius: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: verdana;
+    font-size: 1.5em;
+    padding: 12px;
+    text-align:center;
+    color: #633D02;
+}
+
+header q{
+    position: relative;
+    border-style: none;
+    font-size: 1em;
+}
+header a{
+    position: relative;
+    font-style: italic;
+    font-size: .6em;
+}
+main{
+    margin-bottom: 5%;
+    /*border-style: solid;
+    border-color: blue;*/
+    position: relative;
+    float: right;
+    max-width: 69%;
+}
+
+.heading2{
+    left: 25%;
+    border-style: solid;
+    border-color: #C59942;
+    background-color: #846742;
+    color: #E4DACE;
+    border-radius: 15%;
+    border-width: 5px;
+    font-family: cursive;
+    font-size: 1.6em;
+    max-width: 45%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+    position: relative;
+    text-align: center;
+}
+.heading3{
+    color: #633D02;
+    margin-top: -1%;
+    max-width: 55%;
+    font-style: normal;
+    font-family: cursive;
+    position: relative;
+}
+.heading4{
+    margin-left: 5%;
+    font-family: cursive;
+    color: #633D02;
+    font-size: 1.1em;
+}
+main article section p{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.rightsection{
+    display: inline;
+    position: relative;
+    float: right;
+    font-size: 1.1em;
+}
+
+.leftsection{
+    display: inline;
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    font-size: 1.1em;
+}
+#slice{
+    margin-top: 10%;
+    border-style: inset;
+    position: relative;
+    border-radius: 80%;
+    left: 21.6%;
+}
+article section{
+    position: relative;
+    max-width: 40%;
+    text-indent: 5%;
+    font-style: italic;
+    font-family: cursive;
+    color: #A17725;
+    border-color: #C1AF8C;
+    border-radius: 10px; 
+    border-style: dotted;
+    border-width: .3em;
+}
+
+img{
+    position: relative;
+    border-style: outset;
+    border-color: #C1AF8C;
+    max-width: 51%;
+    border-radius: 15px;
+    border-width: 4px;
+}
+
+#img1{
+    z-index: 1;
+}
+#img2{
+    margin-top: -4%;
+    z-index: 2;
+}
+#img3{
+    margin-top: -4%;
+    z-index: 3;
+}
+#righttext{
+    margin-top: -.5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    clear: right;
+    padding-right: 2%;
+    border-left-style: none;
+}
+#lefttext1{
+    padding-top: 7.8%;
+    padding-bottom: 6%;
+    border-right-style: none;
+    padding-left: 2%;
+    clear: left;
+}
+#lefttext2{
+    margin-top: -.5%;
+    padding-top: 3.2%;
+    padding-bottom: 1.8%;
+    border-right-style: none;
+    clear: left;
+    padding-left: 2%;
+}
+
+aside{
+    overflow-y: auto;
+    position: relative;
+    margin-top: 2.3%;
+    max-width: 30%;
+    border-style: inset;
+    border-color: #C1AF8C;
+}
+.inputsection{
+    margin-top: 10%;
+    max-width: 60%;
+    position: relative;
+    left: 25%;
+}
+#pieCount{
+ max-width: 14%;
+}
+hr{
+    max-width: 90%;
+}
+
+li{
+    margin-left: 6%;
+    padding-right: 10%;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #A17725;
+    font-family: cursive;
+}
+#portion{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+aside #backtomain{
+    color: #633D02;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+    text-decoration: none;
+}
+.rating {
+overflow: hidden;
+
+  float: right;
+  margin-right: 5%;
+  display: inline-block;
+  width: 50%;
+  height: 1.5em;
+  vertical-align : bottom;
+}
+.rating-input {
+      float: right;
+      width: 16px;
+      height: 16px;
+      padding: 0;
+      margin: 0 0 0 -16px;
+      opacity: 0;
+  }
+.rating-star {
+      position: relative;
+      float: right;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url('star.png') 0 -16px;
+  }
+.rating > label{
+  display: block;
+  float: right;
+  position: relative;
+  background: url('../resource/star.png');
+  background-size: contain;
+  margin-bottom: -8%;
+  padding-bottom: 0%;
+}
+.rating > label:before{
+  content: '';
+  display: block;
+  width: .7em;
+  height: .7em;
+  background: url("../resource/star-gold.png");
+  background-size : contain;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating:not(:hover) > :checked ~ label:before{
+  opacity : 1;
+}
+
+label{
+    font-size: 1.3em;
+}
+aside a{
+    font-size: 1.3em;
+}
+span{
+    font-size: 2em;
+}
+
+
+/*
+#rating{
+    position: relative;
+    display: inline-block;    
+    float: right;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-right: 8%;
+    margin-left: 2%;
+}
+*/
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apple Pie</title>
+	<link rel="stylesheet" href="../style/recipe.css" type="text/css" >
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<header>
+		<q>If you wish to make an apple pie from scratch, you must first invent the universe.</q><br>
+		<a href="https://sv.wikipedia.org/wiki/Carl_Sagan">Carl Sagan</a>
+	</header>
+	<main>
+		<article>
+			<h2 class="heading2">Directions</h2>
+			
+			<section id="lefttext1" class="leftsection">
+				<h3 class="heading3">Step 1</h3>
+				<p>Heat oven to 218°C/425°F. Place 1 pie crust in ungreased 9-inch glass pie plate. Press firmly against side and bottom.
+				</p>
+			</section>
+			<img id="img1" class="rightsection" src="https://images-gmi-pmc.edge-generalmills.com/1e5c6bf1-4636-4c2d-ba35-b0a821c96d78.jpg" alt="step1 image">
+			
+			<section id="righttext" class="rightsection">
+				<h3 class="heading3">Step 2</h3>
+				<p>In large bowl, gently mix filling ingredients; spoon into crust-lined pie plate. Top with second crust. Wrap excess top crust under bottom crust edge, pressing edges together to seal; flute. Cut slits or shapes in several places in top crust.
+				</p>
+			</section>
+			<img id="img2" class="leftsection" src="https://images-gmi-pmc.edge-generalmills.com/e7f8a9e3-eb34-4e2c-ac4c-3a557694a6e4.jpg" alt="step2 image">
+			<section id="lefttext2" class="leftsection">
+
+				<h3 class="heading3">Step 3</h3>
+				<p>Bake 40 to 45 minutes or until apples are tender and crust is golden brown. Cover edge of crust with 2- to 3-inch wide strips of foil after first 15 to 20 minutes of baking to prevent excessive browning. Cool on cooling rack at least 2 hours before serving.
+				</p>
+			</section>
+			<img id="img3" class="rightsection" src="https://images-gmi-pmc.edge-generalmills.com/5862230f-ef20-442b-8510-78e5a9a7b6fd.jpg" alt="step3 image">
+
+		</article>
+	</main>
+
+	<aside>
+		<section>
+			<h2 class="heading2">Ingredients</h2>
+			<img id="slice" src="https://usercontent1.hubstatic.com/5784652.jpg" alt="pie slice">
+			
+			<ul>
+				<li>1 box Pillsbury™ refrigerated pie crusts, softened as directed on box.</li>
+				<li>6 cups thinly sliced, peeled apples (m size)</li>
+				<li>3/4 cup sugar</li>
+				<li>2 tablespoons all-purpose flour</li>
+				<li>3/4 teaspoon ground cinnamon</li>
+				<li>1/4 teaspoon salt</li>
+				<li>1/8 teaspoon ground nutmeg</li>
+				<li>1 tablespoon lemon juice</li>
+			</ul>
+		</section>
+		<div class="inputsection">
+			<label>number of portions</label>
+			<input type="number" id="pieCount"  value="1" min="1" max="10" step="1" onchange="updateIngredients()">
+		</div>
+		<hr>
+		<a href=slutuppgift.html id="backtomain">back to main page</a>
+			<span class=rating>
+			<input id="rating5" class="rating-input" type="radio" name="rating" value="5">
+			<label for="rating5"></label>
+			<input id="rating4" class="rating-input" type="radio" name="rating" value="4">
+			<label for="rating4"></label>
+			<input id="rating3" class="rating-input" type="radio" name="rating" value="3">
+			<label for="rating3"></label>
+			<input id="rating2" class="rating-input" type="radio" name="rating" value="2">
+			<label for="rating2"></label>
+			<input id="rating1" class="rating-input" type="radio" name="rating" value="1">
+			<label for="rating1"></label>
+			</span>
+	</aside>
+	<script src="../script/recipe.js"></script>
+</body>   
+</html>

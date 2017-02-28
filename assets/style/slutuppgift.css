@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../resource/sayagata.png");
+}
+
+header{
+    position: relative;
+    background-image: url("../resource/pieheader.jpg");
+    border-style: outset;
+    border-color: #C1AF8C;
+    border-width: 3px;
+    border-radius: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: verdana;
+    font-size: 1.5em;
+    padding: 12px;
+    text-align:center;
+    color: #633D02;
+}
+
+header q{
+    position: relative;
+    border-style: none;
+    font-size: 1em;
+}
+
+header a{
+    position: relative;
+    font-style: italic;
+    font-size: .6em;
+}
+
+figure {
+    float: right;
+    max-width: 40%;
+    height: 60%;   
+    padding-right: .5%;
+    margin-right: 5%;
+}
+
+figure img{
+    width: 100%;
+    padding: 1%;
+    height: auto;
+    border-radius: 25px;
+}
+figure figcaption{
+    height: auto;
+    min-width: 20%;
+    margin: auto;
+    color: black;
+    text-align: center;
+}
+
+article{
+    position: absolute;
+    float: left;
+    max-width: 48%;
+    height: auto;
+    margin-top: 4%;
+    margin-right: 5%;
+    margin-left: 3%;
+    font-size:1em;
+    font-family: cursive;
+}
+
+article h1{
+    font-family: cursive;
+        color: #633D02;
+    margin: 5% 7% 5% 7%;
+    text-align: center;
+}
+
+blockquote {
+    max-width: 100%;
+    position: relative;
+    margin-top: 10px;
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-right: 0%;
+    margin-left: 6%;
+}
+
+article div{
+    display: inline-block;
+    position: relative;
+    min-width: 35%;
+    float: right;
+    margin-top: 3%;
+    padding: 0% 2% 0% 2%;
+}
+
+
+
