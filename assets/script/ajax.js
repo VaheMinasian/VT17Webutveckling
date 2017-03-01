@@ -18,7 +18,7 @@ function rateRequest(myRating){
 		}
 	}
 	xhttp.open("GET",
-		"https://edu.oscarb.se/sjk15/api/recipe/?api_key=91a5fd546b1086ec&recipe=%C3%84ppelpaj" + myRating,
+		"https://edu.oscarb.se/sjk15/api/recipe/?api_key=91a5fd546b1086ec&recipe=appelpaj&rating=" + myRating,
 		true);
 	xhttp.send();
 }
@@ -26,7 +26,7 @@ function rateRequest(myRating){
 function displayResults () {
     $.ajax({
         method: "GET",
-        url: "https://edu.oscarb.se/sjk15/api/recipe/?api_key=91a5fd546b1086ec&recipe=%C3%84ppelpaj",
+        url: "https://edu.oscarb.se/sjk15/api/recipe/?api_key=91a5fd546b1086ec&recipe=appelpaj",
         success: function(data) {
             var rating = data.rating.toFixed(1);
             $("#average").text(rating);
