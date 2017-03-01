@@ -60,7 +60,7 @@
 		</div>
 		<hr>
 		<a href=slutuppgift.html id="backtomain"> home page</a>
-			<span class=rating>
+			<div class="rating">
 			<input id="rating5" class="rating-input" type="radio" name="rating" value="5">
 			<label for="rating5"></label>
 			<input id="rating4" class="rating-input" type="radio" name="rating" value="4">
@@ -71,8 +71,12 @@
 			<label for="rating2"></label>
 			<input id="rating1" class="rating-input" type="radio" name="rating" value="1">
 			<label for="rating1"></label>
-			</span>
+			<p id="results">voters | average </p>
+			<p id="voters"></p><p id="average"></p>
+			</div>
 	</aside>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="../script/recipe.js"></script>
+	<script type="text/javascript" src="../script/ajax.js"></script>
 </body>   
 </html>
