@@ -3,15 +3,13 @@
 	padding: 0;
 }
 html {
-	height: 100%;
+	height: auto;
     overflow-y: scroll;
     overflow-x: hidden;
-    	margin-bottom: 170px;
 
 }
 body{
-	overflow-y: hidden;
-	height: 120%;
+	position: relative;
 }
 
 header{
@@ -38,29 +36,28 @@ header p{
 	padding-top: 8px;
 	font-size: 18px;
 }
+
 main{
+	position: relative;
 	top: 89px;
 	margin-left: 0px;
-	position: relative;
 	max-width: 75%;
-	height: 100%;
+	height: auto;
 	float: right;
 	background-color: #EADFF0;
-	z-index: 0;
 }
 main h2{
-	padding-left: 30px;
-	padding-top: 30px;
-	padding-bottom: 10px;
+	width: 300px;
+	left: 30px;
+	position: relative;
+	padding-top: 30px 0 10px 30px;
 }
 main p {
-	padding-left: 30px; 
-	padding-top: 15px; 
-	padding-right: 30px; 
+	padding: 15px 30px 0 30px;
 	font-size: 18px;
 }
 .bottom_text{
-	margin-bottom: 270px;
+	margin-bottom: 89px;
 }
 .centered_image{
 	float: auto;
@@ -73,14 +70,13 @@ aside{
 	position: relative;
 	float: both;
 	top: 89px;
-	height: 770px;
-	max-width: 25%;
-	padding-right: 1.5px;
+	bottom: 0px;
+	height: auto;
+	padding-bottom: 89px;
 	border-style: solid;
 	background-color: #FCE889;
 	border-color: #CCC002;
-	overflow-x: hidden;
-	z-index: -3;
+	overflow: hidden;
 }
 .JSlogo{
 	padding-top: 35px;
@@ -89,12 +85,11 @@ aside{
 	float: right;
 }
 nav{
-	left: 30px;
-	position: absolute;
-	padding-top: 35px;
-	margin-top: 170px;
-	padding-left: 50px;
-	padding right: 100px;
+	position: relative;
+	left: 10px;
+	height: auto;
+	padding: 35px 20px 400px 30px;
+	margin-top: 150px;
 }
 nav h3{
 	font-size: 20px;
@@ -105,29 +100,12 @@ nav a{
 	font-size: 18px;
 	text-decoration: none;
 }
-.mask{
-	position: absolute;
-	bottom: 0px;
-	float: both;
-	height: 87px;
-	width: 450px;
-	margin-bottom: -170px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #ffffff;
-	border-top-color: #CCC002;
-	background-color: #ffffff;
-	z-index: -1;
-}
+
 footer {
-	position: absolute;
-	float: both;
-	left: 0px;
-	bottom: 0px;
+	position: relative;
+	float:both;
+	clear: both;
 	height: 30px;
-	margin-left: 0px;
-	margin-bottom: -170px;
-	right: 0px;
 	padding-bottom: 34px;
 	padding-top: 20px;
 	background-color: #B0E4D1;
@@ -135,5 +113,6 @@ footer {
 	border-style: solid;
 	border-radius: 20px;
 	text-align: center;
-	z-index: 1;
+	bottom: 0px;
+	margin-bottom: 34px;
 	}​
