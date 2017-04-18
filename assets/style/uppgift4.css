@@ -28,7 +28,7 @@ body{
 }
 
 #big-bounce {
-    left: 1%;
+    left: 15px;
     border: 4px #F86D26 solid;
     background: #F86D26;
     -webkit-animation-name: bounce; 
@@ -56,22 +56,21 @@ body{
     100% {
         width: 46px;
         height: 34px;
-        bottom: 45px;
+        bottom: 40px;
     }
 }
 
 #small-left {
-    left: 10%;
+    left: 150px;
     border: 3px #0000ff solid;
     background: #0000ff;
 }
 
 #small-right {
-    left: 16.5%;
+    left: 250px;
     border: 3px #ff0000 solid;
     -webkit-animation-delay: 1s;
     background: #ff0000;
-    margin-top: -100px;
 }
 
 .ball{
@@ -82,6 +81,7 @@ body{
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 1s;
     -webkit-animation-direction: alternate;
+    margin-top: -100px;
 }
 
 @-webkit-keyframes arm {
@@ -116,7 +116,7 @@ body{
 .scalebase{
     position: absolute;
     left:  14%;
-    bottom: 1.4%;
+    bottom: 10px;
     background-color: black;
     height: 10px;
     width: 14px;
