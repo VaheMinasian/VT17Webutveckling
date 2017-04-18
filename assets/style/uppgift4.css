@@ -5,209 +5,114 @@ body{
     0% {
         width: 100px;
         height: 100px;
-        border-radius: 100%;
         bottom: 80%;
-        left: 1%;
-        border-color: #F86D26;
-        background: #F86D26;
-    }
+        }
     90% {
         width: 100px;
         height: 100px;
-        border-radius: 100%;
-        bottom: .1%;
-        left: 1%;
-        border-color: #F86D26;
-        background: #F86D26;
-    }
+        }
     95% {
         width: 112px;
         height: 88px;
-        border-radius: 100%;
-        bottom: .1%%;
-        left: 1%;
-        border-color: #F86D26;
-        background: #F86D26;
-    }
+        }
     98% {
         width: 117px;
         height: 83px;
-        border-radius: 100%;
         bottom: .1%;
-        left: 1%;
-        border-color: #F86D26;
-        background: #F86D26;
     }
     100% {
-        width: 120px;
-        height: 80px;
-        border-radius: 100%;
-        bottom: 0%;
-        left: 1%;
-        border-color: #F86D26;
-        background: #F86D26;
+        width: 125px;
+        height: 75px;
+        bottom: 0%;   
     }
 }
-.bounce {
+
+#big-bounce {
+    left: 1%;
+    border: 4px #F86D26 solid;
+    background: #F86D26;
     -webkit-animation-name: bounce; 
-    position: absolute;
-    border-style: solid;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 1.2s;
-    -webkit-animation-direction: alternate;
 }
 
-@-webkit-keyframes leftBounce {
+@-webkit-keyframes smallBounce {
     0% {
         width: 40px;
         height: 40px;
-        border-color: #0000ff;
-        border-radius: 100%;
         bottom: 80%;
-        left: 10%;
-        background: #0000ff;
     }
     95% {
         width: 40px;
         height: 40px;
-        border-color: #0000ff;
-        border-radius: 100%;
-        bottom: 5.2%;
-        left: 10%;
-        background: #0000ff;
     }
     97% {
         width: 43px;
         height: 37px;
-        border-color: #0000ff;
-        border-radius: 100%;
-        bottom: 5.2%;
-        left: 10%;
-        background: #0000ff;
     }
     99% {
         width: 45px;
         height: 35px;
-        border-color: #0000ff;
-        border-radius: 100%;
-        bottom: 5.2%;
-        left: 10%;
-        background: #0000ff;
     }
     100% {
         width: 46px;
         height: 34px;
-        border-color: #0000ff;
-        border-radius: 100%;
         bottom: 5.2%;
-        left: 10%;
-        background: #0000ff;
     }
-}       
-.bounce1 {
-    -webkit-animation-name: leftBounce; 
-    position: absolute;
-    border-style: solid;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-direction: alternate;
 }
 
-@-webkit-keyframes rightBounce {
-    0% {
-        width: 40px;
-        height: 40px;
-        border-color: #ff0000;
-        border-radius: 100%;
-        bottom: 80%;
-        left: 16.5%;
-        background: #ff0000;
-    }
-    95% {
-        width: 40px;
-        height: 40px;
-        border-color: #ff0000;
-        border-radius: 100%;
-        bottom: 5.2%;
-        left: 16.5%;
-        background: #ff0000;
-    }
-    97% {
-        width: 43px;
-        height: 37px;
-        border-color: #ff0000;
-        border-radius: 100%;
-        bottom: 5.2%;
-        left: 16.5%;
-        background: #ff0000;
-    }
-    99% {
-        width: 45px;
-        height: 35px;
-        border-color: #ff0000;
-        border-radius: 100%;
-        bottom: 5.2%;
-        left: 16.5%;
-        background: #ff0000;
-    }
-    100% {
-        width: 46px;
-        height: 34px;
-        border-color: #ff0000;
-        border-radius: 100%;
-        bottom: 5.2%;
-        left: 16.5%;
-        background: #ff0000;
-    }
+#small-left {
+    left: 10%;
+    border: 3px #0000ff solid;
+    background: #0000ff;
 }
-.bounce2 {
-    -webkit-animation-name: rightBounce; 
-    position: absolute;
-    border-style: solid;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
+
+#small-right {
+    left: 16.5%;
+    border: 3px #ff0000 solid;
     -webkit-animation-delay: 1s;
+    background: #ff0000;
+    margin-top: -100px;
+}
+
+.ball{
+    border-radius: 100%;
+    position: absolute;
+    -webkit-animation-name: smallBounce; 
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
     -webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes arm {
-    0% {
-        left:  11%;
-        bottom: 2.8%;
-        height: 4px;
-        width: 110px;
-    }
     09% {
-        -webkit-transform: rotate(-16deg);
-        left:  11%;
-        bottom: 2.8%;
-        height: 4px;
-        width: 110px;
-    }
-    50% {
-        left:  11%;
-        bottom:2.8%;
-        height: 4px;
-        width: 110px;
+        -webkit-transform: rotate(-16deg); 
     }
     91% {
         -webkit-transform: rotate(16deg);
-        left:  11%;
-        bottom: 2.8%;
-        height: 4px;
-        width: 110px;
     }
     100% {
         -webkit-transform: rotate(-16deg);
-        left:  11%;
-        bottom: 2.8%;
-        height: 4px;
-        width: 110px;
     }
 }
+
+.scalearm{
+    position: relative;
+    height: 4px;
+    right: 335%;
+    width: 110px;
+    float: left;
+    bottom: 4.5px;
+    background-color: black;
+    -webkit-animation-name: arm; 
+    -webkit-transform: rotate(16deg);
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+}
+
 .scalebase{
     position: absolute;
     left:  14%;
@@ -217,22 +122,6 @@ body{
     width: 14px;
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
-}
-
-.scalearm{
-    -webkit-animation-name: arm; 
-    left:  11%;
-    bottom: 2.8%;
-    background-color: black;
-    height: 4px;
-    width: 110px;
-    position: absolute;
-    -webkit-transform: rotate(16deg);
-    -webkit-animation-delay: 1s;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
 }
 
 @-webkit-keyframes move {
@@ -349,18 +238,7 @@ body{
     -webkit-animation-direction: alternate;
     -webkit-animation-fill-mode: forwards;
 }
-.HTML5{
-    -webkit-animation-name: html;
-    position: absolute;
-    border-style: dashed;
-    border-width: 5px;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-fill-mode: forwards;
-}
+
 @-webkit-keyframes html {
     0% {
         -webkit-transform: rotate(5deg);
@@ -403,15 +281,19 @@ body{
        background: #F30C0C;
    }
 }
-.html_text{
-    -webkit-animation-name: html_t;
-    -webkit-animation-iteration-count: infinite;
-    font-weight: bold;
-    -webkit-animation-duration: 3s;
+#HTML5{
+    -webkit-animation-name: html;
     position: absolute;
-    text-align: center;
-    vertical-align: middle;
+    border-style: dashed;
+    border-width: 5px;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
 }
+
 @-webkit-keyframes html_t {
     0% {
         -webkit-transform: rotate(810deg);
@@ -421,6 +303,17 @@ body{
         font-size: 30px;
     }
 }
+
+#html_text{
+    -webkit-animation-name: html_t;
+    -webkit-animation-iteration-count: infinite;
+    font-weight: bold;
+    -webkit-animation-duration: 3s;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
 @-webkit-keyframes CSS {
     0% {
         visibility: visible;
@@ -499,18 +392,6 @@ body{
     -webkit-animation-direction: normal;
 }
 
-.CSS_text{
-    -webkit-animation-name: CSS_t;
-    position: absolute;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: -50px;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    font-weight: bold;
-    -webkit-animation-duration: 5s;
-}
 @-webkit-keyframes CSS_t {
     0% {
         padding-top: -50px;
@@ -537,13 +418,15 @@ body{
     }
 }
 
-.HTML5{
-    height: 50px;
-    width: 50px;
-    border-style: dashed;
-    border-color: #02E0E1;
-    background-color: #365481;
-    margin-right: 20px;
-    margin-top: 10px;
-    float: right;
+.CSS_text{
+    -webkit-animation-name: CSS_t;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: -50px;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    font-weight: bold;
+    -webkit-animation-duration: 5s;
 }
