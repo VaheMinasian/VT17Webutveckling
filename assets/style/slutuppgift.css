@@ -6,24 +6,16 @@ body {
 
 header{
     position: relative;
+    padding: 12px;
     background-image: url("../resource/pieheader.jpg");
     border-style: outset;
     border-color: #C1AF8C;
     border-width: 3px;
     border-radius: 20px;
-    margin-top: 1%;
-    margin-bottom: 1%;
     font-family: verdana;
     font-size: 1.5em;
-    padding: 12px;
-    text-align:center;
     color: #633D02;
-}
-
-header q{
-    position: relative;
-    border-style: none;
-    font-size: 1em;
+    text-align:center;   
 }
 
 header a{
